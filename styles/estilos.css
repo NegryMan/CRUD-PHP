@@ -1,0 +1,113 @@
+/* el body */
+body{
+    background-image: url('../src/img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family:'Roboto';  
+    margin: 0;
+    padding: 0;  
+}
+
+/* header */
+header{
+    background-color: black;
+    height: 50px;
+    width: 100%;        
+    display: flex;
+    position: fixed;
+    top: 0;    
+    left: 0;    
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+nav ul li{
+    list-style-type: none;
+    margin:0 15px ;    
+    
+}
+a{
+    text-decoration: none;
+    color: aliceblue;  
+}
+
+/*div formulario */
+.formu{
+    display: block;
+    background-color: rgb(255, 255, 255,0.85);    
+    margin: 80px auto;
+    width: 400px;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+.formu h2{
+    text-align: center;
+}
+    /* el contenedor de los elementos*/
+.llenado{
+    display: flex;                
+    justify-content: center;    
+}
+.bloque{    
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;        
+}
+.botones input[type="submit"],
+.botones input[type="button"] {
+    display: block;    
+    margin: 5px auto;               
+}
+.botones input{
+    color: white;
+    background-color: #04AA6D;
+    width: 250px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;    
+}
+.botones input:hover{
+    background-color: #46a049;
+}
+
+/* Tabla de read.php */
+
+table{
+    border-color: black;
+    border-collapse: collapse;
+    margin:25px auto 25px auto;
+    color: white;    
+}
+td, tr, th{
+    border: 2px solid #000000;
+    padding: 10px;
+}
+tr{
+    background-color: rgba(127, 255, 212, 0.568);
+}
+.row2{
+    background-color: rgba(73, 204, 160, 0.5);
+}
+th{
+    background-color: #46a0499f;
+    color: #000000;
+}
+.delete{
+    color: rgb(255, 255, 255);
+    
+}
+
+button{    
+    background-color: #04AA6D;
+    width: 80px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 1000;
+}
