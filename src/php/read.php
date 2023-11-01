@@ -8,7 +8,7 @@ include("../static/header.php");
         <tr>
             <th>ID</th>
             <th>Nombre</th>
-            <th>Email</th>
+            <th>Contraseña</th>
             <th>Acciones</th>
         </tr>
         <?php
@@ -22,7 +22,7 @@ include("../static/header.php");
             while ($row = $result->fetch_assoc()) {
 
                 echo "<tr><td>" . $row["id"] . "</td><td>" . $row["usuario"] . "</td><td>" . $row["contrasena"] . "</td>";
-                echo "<td><button><a href='update.php? id=" . $row["id"] . " '>Actualizar</a></button> | <button class='botones'><a  class='delete' href='delete.php?id=" . $row["id"] . "'>Eliminar</a></button></td></tr>";
+                echo "<td><button><a href='update.php' id=" . $row["id"] . " '>Actualizar</a></button> | <button class='botones'><a  class='delete' href='delete.php' id=" . $row["id"] . "'>Eliminar</a></button></td></tr>";
             
             }
         } else {

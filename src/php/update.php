@@ -1,28 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="../estilos.css">
-</head>
-<body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="../../index.php">Inicio</a></li>
-            <li><a href="read.php">Lista de Usuarios</a></li>
-        </ul>
-    </nav>
-</header>
-    <h2>Actualizar Usuario</h2>
-    <form method="post" action="update.php">
-        <input type="hidden" name="id" value="<?= $id ?>">
-        <label for="nombre">Nuevo Nombre:</label>
-        <input type="text" name="nombre" value="<?= $row['nombre'] ?>" required>
-        <br>
-        <label for="email">Nuevo Email:</label>
-        <input type="email" name="email" value="<?= $row['email'] ?>" required>
-        <br>
-        <input type="submit" name="update" value="Actualizar Usuario">
-    </form>
+<?php 
+include_once("../static/header.php");
+?>
+   
+   <div class="formu">        
+            <div> <h2>Actualizar usuario</h2>
+            
+            <form action="index.php" method="post">
+
+                <div class="llenado">
+                    <!-- bloques para labels -->
+                    <div class="bloque">
+                        <label for="Nusuario">Nuevo usuario:</label>
+                        <br>
+                        <label for="Ncontrasena">Nueva contraseña:</label>                                                                      
+                    </div>
+                    <!-- pa las contras -->
+                    <div class="bloque">
+                        <input type="text" name="Nusuario" id="Nusuario" required>                                              
+                        <br>
+                        <input type="password" name="Ncontrasena" id="Ncontrasena" required> 
+                    </div>           
+                </div>
+                <br>
+                <div class="botones">
+
+                    <!-- Boton iniciar sesion-->
+                    <input type="submit" name="submit" value="Actualizar usuario">
+                    <!-- Boton registrar cuenta-->                    
+                    </a>
+
+                </div>            
+
+            </form>
+            </div>
+       
+   </div>
+
+
 </body>
 </html>
 

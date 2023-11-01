@@ -49,51 +49,9 @@ include_once("src/static/header.php");
                     }
 
                 }    
-            ?>
-        <?php 
-        
-
-
-        ?>    
+            ?>                    
 
     </div>
-
-    <!-- manda info y comprueba -->
-    <?php    
-
-    // if (empty($_POST[''])) {
-
-    // if ($_SERVER["REQUEST_METHOD"]=="POST" && isset($_POST['submit'])){
-
-    //     $usuarioLog=$_POST['usuario'];
-    //     $contraLog=$_POST['contrasena'];
-
-    //     $stmt=$conn->prepare("SELECT id, usuario, contrasena FROM usuarios WHERE usuario=?");
-    //     $stmt-> bind_param("s",$usuarioLog);
-    //     $stmt->execute();
-    //     $stmt->store_result();
-
-    //     if ($stmt->num_rows === 1) {
-    //         $stmt->bind_result($id, $usuario, $contraseña);
-    //         $stmt->fetch();
-            
-    //         if (password_verify($contraLog, $contraseña)) {
-            
-    //             $_SESSION['id'] = $id; // Almacena el ID del usuario en una variable de sesión
-    //             $_SESSION['usuario'] = $usuario; // Almacena el nombre de usuario en una variable de sesión
-    //             header("Location: src/php/read.php"); // Redirige al usuario a la página de bienvenida
-    
-            
-    //         } else {
-    //             echo "Contraseña incorrecta";
-    //         }
-    //     }else {
-    //         echo "Usuario no encontrado";
-    //     }
-    //     }
-    // }
-    
-    ?>
 
 </body>
 </html>

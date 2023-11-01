@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<header>
+<header>         
     <nav>
         <ul>
             <li><a href="/xampp/14-octubre/index.php">Inicio</a></li>
