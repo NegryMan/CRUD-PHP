@@ -1,3 +1,5 @@
+*{margin: 0px;padding: 0px;}
+
 /* el body */
 body{
     background-image: url('../src/img/fondo.jpg');
@@ -12,12 +14,13 @@ body{
 /* header */
 header{
     background-color: black;
-    height: 500px;
+    height: 75px;
     width: 100%;        
     display: flex;
-    position: fixed;
+    /* position: fixed; */
     top: 0;    
     left: 0;
+    margin-bottom: 50px;
 }
 nav ul{
     display: flex;
@@ -51,12 +54,16 @@ a{
 .llenado{
     display: flex;                
     justify-content: center;
+    align-items: center;
+    
     
 }
 .bloque{    
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;    
+
+    display: block;    
+    margin:30px 20px 0 0;
+    align-items: center;
+    gap:10px
 }
 .bloque label{
     padding-bottom: 10px;

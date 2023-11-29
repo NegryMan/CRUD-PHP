@@ -28,8 +28,8 @@ include_once("src/static/header.php");
                 <!-- Boton registrar cuenta-->
                 <a href="/xampp/14-octubre/src/php/crearCuenta.php">
                     <input type="button" value="Registrarse">
-                </a>
-
+                </a><br>
+                <!-- <h2 style="color: red; font-weight: 10px;">Sesion cerrada con exito</h2> -->
             </div>            
 
         </form>

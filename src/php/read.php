@@ -29,6 +29,9 @@ include("../static/header.php");
             echo "<tr><td colspan='4'>No se encontraron usuarios.</td></tr>";
         }
         ?>
+        
+
     </table>
+    <center><a  href="/index.html"><button class="height:50px" >Cerrar sesion</button></a></center>
 </body>
 </html>
